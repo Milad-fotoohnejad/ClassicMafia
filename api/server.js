@@ -9,7 +9,7 @@ const vercelAppDomain = 'https://classic-mafia.vercel.app/';
 const server = http.createServer();
 const io = socketIO(server, {
   cors: {
-    origin: ["http://localhost:3000", vercelAppDomain], // Update the origin value to include both domains
+    origin: "https://classic-mafia.vercel.app/", // Update the origin value to include both domains
     methods: ["GET", "POST"],
   },
 });

@@ -28,7 +28,7 @@
     "eject": "react-scripts eject"
   },
 
-  "proxy": "http://localhost:8888",
+  "proxy": "https://classic-mafia.vercel.app/",
 
   "eslintConfig": {
     "extends": [
