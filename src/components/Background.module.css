@@ -1,0 +1,42 @@
+.backgroundContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundImageItem {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: move-background 20s linear infinite;
+}
+
+.backgroundImageItem:nth-child(1) {
+  background-image: url('../background-assets/cards.png');
+  animation-delay: -30s;
+}
+
+.backgroundImageItem:nth-child(3) {
+  background-image: url('../background-assets/gun.png');
+  animation-delay: -30s;
+}
+
+
+@keyframes move-background {
+  from {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    transform: translate3d(100px, 300px, 200px);
+  }
+}

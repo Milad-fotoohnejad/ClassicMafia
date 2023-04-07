@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.random-role-generator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+}
+
+.player-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.player-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.role-assignments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.role-assignment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.player-name {
+  font-weight: bold;
+  margin-right: 16px;
+}
