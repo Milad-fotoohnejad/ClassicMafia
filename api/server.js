@@ -1,11 +1,15 @@
 const http = require("http");
 const socketIO = require("socket.io");
+const cors = require('cors');
 const PORT = 8888;
+
+const vercelAppDomain = 'https://classic-mafia.vercel.app/';
+
 
 const server = http.createServer();
 const io = socketIO(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", vercelAppDomain], // Update the origin value to include both domains
     methods: ["GET", "POST"],
   },
 });
