@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './StartButton.module.css';
+import { Link } from 'react-router-dom';
 
 const StartButton = () => {
   const [isOn, setIsOn] = useState(false);
@@ -9,9 +10,13 @@ const StartButton = () => {
   };
 
   return (
-    <a href="/Game" className={`${styles.button} ${isOn ? styles.on : ''}`} onClick={handleClick}>
+    <Link
+      to="/Game"
+      className={`${styles.button} ${isOn ? styles.on : ''}`}
+      onClick={handleClick}
+    >
       Start Game
-    </a>
+    </Link>
   );
 };
 
