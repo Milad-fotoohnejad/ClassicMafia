@@ -1,18 +1,28 @@
-const http = require("http");
-const socketIO = require("socket.io");
+const express = require('express');
+const app = express();
+const http = require('http');
+const server = http.createServer(app);
 const cors = require('cors');
 const PORT = 8888;
-
-const vercelAppDomain = 'https://classic-mafia.vercel.app/';
-
-
-const server = http.createServer();
-const io = socketIO(server, {
+const io = require('socket.io')(server, {
   cors: {
-    origin: "https://classic-mafia.vercel.app/", // Update the origin value to include both domains
+    origin: "https://classic-mafia.vercel.app/",
     methods: ["GET", "POST"],
-  },
+    allowedHeaders: ["my-custom-header"],
+    credentials: true
+  }
 });
+
+
+// const vercelAppDomain = 'https://classic-mafia.vercel.app/';
+
+
+// const io = socketIO(server, {
+//   cors: {
+//     origin: "https://classic-mafia.vercel.app/", // Update the origin value to include both domains
+//     methods: ["GET", "POST"],
+//   },
+// });
 
 const players = [];
 let gamePhase = "Day 1"; // Added a variable to store the current game phase
