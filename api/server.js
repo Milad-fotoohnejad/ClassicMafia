@@ -6,7 +6,7 @@ const cors = require('cors');
 const PORT = process.env.PORT || 8888;
 const io = require('socket.io')(server, {
   cors: {
-    origin: "https://classic-mafia.vercel.app/api",
+    origin: "https://classic-mafia.vercel.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true

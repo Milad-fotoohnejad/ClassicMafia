@@ -14,7 +14,7 @@ export const SocketProvider = ({ children }) => {
 
 
   useEffect(() => {
-    const newSocket = io("https://classic-mafia.vercel.app/api");
+    const newSocket = io("https://classic-mafia.vercel.app");
     setSocket(newSocket);
     return () => newSocket.close();
   }, []);
