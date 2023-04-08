@@ -3,10 +3,10 @@ const app = express();
 const http = require('http');
 const server = http.createServer(app);
 const cors = require('cors');
-const PORT = 8888;
+const PORT = process.env.PORT || 8888;
 const io = require('socket.io')(server, {
   cors: {
-    origin: "https://classic-mafia.vercel.app/",
+    origin: "https://classic-mafia.vercel.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
