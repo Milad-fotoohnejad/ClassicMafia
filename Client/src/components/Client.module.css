@@ -1,0 +1,215 @@
+.chat-container {
+  width: 90%;
+  align-items: flex-end;
+  margin: 20px auto;
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+
+.chat-header {
+  display: flex;
+  color: gold;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chat-role {
+  display: flex;
+  color: #811923;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: #811923;
+  border-radius: 5px;
+  box-shadow: 
+      -5px -5px 10px rgba(255, 255, 255, 0.3), 
+      5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  background-color: #ffd700;
+  animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 
+      -5px -5px 10px rgba(255, 255, 255, 0.3), 
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      0 0 0 0 #811923;
+  }
+  70% {
+    transform: scale(1.09);
+    box-shadow: 
+      -5px -5px 10px rgba(255, 255, 255, 0.3), 
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      0 0 0 10px rgba(255, 208, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 
+      -5px -5px 10px rgba(255, 255, 255, 0.3), 
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      0 0 0 0 rgba(246, 223, 118, 0);
+  }
+}
+
+.chat-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chat-input-container label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.chat-input-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3f3f3f;
+  border-radius: 5px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.chat-messages {
+  height: auto;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.sent {
+  text-align: right;
+}
+
+.received {
+  text-align: left;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.color-1 {
+  color: #ff69b4;
+}
+
+.color-2 {
+  color: #9370db;
+}
+
+.color-3 {
+  color: #1e90ff;
+}
+
+.color-4 {
+  color: #00ced1;
+}
+
+.color-5 {
+  color: #32cd32;
+}
+
+.color-6 {
+  color: #ffd700;
+}
+
+.color-7 {
+  color: #ff8c00;
+}
+
+.color-8 {
+  color: #ff6347;
+}
+
+.color-9 {
+  color: #a9a9a9;
+}
+
+.color-10 {
+  color: red;
+}
+
+/* Chat input */
+.chat-input-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3f3f3f;
+  border-radius: 5px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffd700;
+  color: #3f3f3f;
+}
+
+.chat-input-container button {
+  padding: 10px;
+  font-size: 16px;
+  border: 5px;
+  border-radius: 5px;
+  border-color: #ffd700;
+  background-color: #ffd700;
+  color: #3f3f3f;
+  box-shadow: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Add this to the existing Client.js CSS */
+.role-generator-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  background-color: #1e3b3e;
+  border-radius: 5px;
+}
+
+.role-generator-container input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3f3f3f;
+  border-radius: 5px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.role-generator-container button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #3f3f3f;
+  box-shadow: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.role-generator-container p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}

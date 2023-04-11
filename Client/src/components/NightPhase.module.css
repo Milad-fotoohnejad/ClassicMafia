@@ -1,0 +1,39 @@
+.container {
+  width: 90%;
+  align-items: flex-start;
+  margin: 20px auto;
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.actionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.playerList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.playerListItem {
+  font-size: 18px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.playerListItem:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

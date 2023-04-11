@@ -1,0 +1,105 @@
+.game-container {
+    width: 90%;
+    align-items: flex-end;
+    margin: 20px auto;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+  }
+  
+  .phaseInstructions {
+    display: flex;
+    color: gold;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .playerVote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .playerVote button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #3f3f3f;
+    background-color: #ffd700;
+    box-shadow: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .playerVote button:hover {
+    background-color: #ffcc00;
+  }
+
+  .playerVote button:active {
+    background-color: #ffcc00;
+    box-shadow: 0px 0px 10px #ffcc00;
+  }
+
+  .playerVote button:disabled {
+    background-color: #3f3f3f;
+    color: #fff;
+  }
+
+  .playerVote button:disabled:hover {
+    background-color: #3f3f3f;
+    color: #fff;
+  }
+
+  .playerVote button:disabled:active {
+    background-color: #3f3f3f;
+    color: #fff;
+    box-shadow: none;
+  }
+
+  .playerVote button:disabled:focus {
+    outline: none;
+  }
+
+  .phase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .mostVotedPlayer {
+    font-size: 22px;
+    font-weight: bold;
+    color: gold;
+    margin-top: 16px;
+    animation: fadeIn 1s, scaleUp 1s;
+    align-content: center;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.8);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }

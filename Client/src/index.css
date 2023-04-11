@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background: linear-gradient(to bottom, #7194fe, #ffe28a);
+  background-attachment: fixed;
+}
+.navBackground {
+  background: linear-gradient(to top, #8aa7ff, #022c43)!important;
+  /* background-color: #723614!important; */
+  z-index: 10;
+}
+.bodyBackground {
+  background-color: #00000083!important;
+  border-radius: 10px 10px 0 0;
+}
+
+.FooterBackground {
+  background-color: #00000083!important;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
